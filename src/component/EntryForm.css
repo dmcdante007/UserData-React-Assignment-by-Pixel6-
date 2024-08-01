@@ -1,0 +1,88 @@
+.wrapper {
+  width: 400px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /*    creating a box effect on the div */
+}
+
+form {
+  display: flex;
+  flex-direction: column; /* to give the direction to the column element*/
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.input-box, .input-box-row {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.input-box input, .input-box-row input {       
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s ease;
+}
+.input-box-row {
+    display: flex;
+    gap: 10px;
+  }
+
+.input-box input:hover, .input-box-row input:hover {
+  border: 1px solid #add8e6; /* Light blue on hover */
+}
+
+.input-box input:focus, .input-box-row input:focus {
+  border: 1px solid #1dd2ff; /* Blue on focus */
+  outline: none;
+}
+button {                /*Submit button styling */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #8fd2e8;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+button:hover {
+  background-color: #2ab8f0;   /*Hover effect on button*/
+}
+
+.list-button {
+    margin-top: 15px;
+}
+
+.phone-box {
+    position: relative;
+  }
+  
+  .phone-box input {
+    padding-left: 40px;
+  }
+.phone-box .prefix {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #666;
+  }
+
+  .loader {
+    position: absolute;
+    right: 10px; 
+    top: 25%;
+    /* top: -8px; */
+    width: 20px; 
+    height: 20px; 
+  }
